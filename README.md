@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Rick and Morty API ile React Uygulaması
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, Rick and Morty API'sini kullanarak geliştirilmiş bir React uygulamasını içerir. Uygulama, karakterlerin, bölümlerin ve konumların detaylarını gösteren bir dizi sayfadan oluşur.
 
-## Available Scripts
+## Proje Yapısı
 
-In the project directory, you can run:
+Projede, aşağıdaki yapısal ögeler kullanılmıştır:
 
-### `npm start`
+- `router`: Dış bir klasörden alınan router yapılandırması.
+- `pages`: Sayfaların bulunduğu dizin.
+- `components`: Bölümlere ayrılmış bileşenlerin tutulduğu dizin.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kullanılan Teknolojiler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Proje geliştirilirken aşağıdaki teknolojiler kullanılmıştır:
 
-### `npm test`
+- React Hooks: `useEffect`, `useState`, `useParams` gibi.
+- React Router: Yönlendirme işlemleri için.
+- React Bootstrap: Kullanıcı arayüzü bileşenleri için.
+- Axios: API istekleri için.
+- Try-Catch Yapısı: Hata yönetimi için kullanılmıştır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sayfalar ve Özellikler
 
-### `npm run build`
+- **Anasayfa (Homepage)**: Uygulama hakkında kısa bilgiler ve geliştirici hakkında bilgiler içerir.
+- **Karakterler (Characters)**: Sonsuz sayfa ile karakter kartlarını görüntüler. Ayrıca arama çubuğu ile karakterleri filtreleme imkanı sunar.
+- **Karakter Detayları (Characters:id)**: Karakterin detaylarını gösterir.
+- **Bölümler (Episodes)**: Bölümleri gösterir. Sonsuz kaydırma yerine "Daha Fazla Yükle" düğmesi kullanılmıştır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Nasıl Çalıştırılır
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Repoyu klonlayın: `git clone https://github.com/kullanici/proje.git`
+2. Proje dizinine gidin: `cd proje`
+3. Gerekli paketleri yükleyin: `npm install`
+4. Projeyi başlatın: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Katkıda Bulunma
 
-### `npm run eject`
+- Hataları raporlamak ve önerilerde bulunmak için [GitHub Issues](https://github.com/alifortacix/rick-and-morty-api-react.git/issues) kullanabilirsiniz.
+- Kod geliştirmeleri için pull talepleri açabilirsiniz.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Geliştirici:** [Ali Fortacı](https://github.com/alifortacix)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Ekran Görüntüleri
 
-## Learn More
+![Ana Sayfa](screenshots/homepage.png)
+![Karakterler](screenshots/characters.png)
+![Karakter Detay](screenshots/character-detail.png)
+![Search](screenshots/search.png)
+![Bölümler](screenshots/episodes.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# React Application with Rick and Morty API
 
-### Code Splitting
+This project includes a React application developed using the Rick and Morty API. The application consists of a series of pages that display details of characters, episodes, and locations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+The project structure includes the following elements:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `router`: Router configuration obtained from an external folder.
+- `pages`: Directory containing the pages.
+- `components`: Directory containing components divided into sections.
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The project was developed using the following technologies:
 
-### Advanced Configuration
+- React Hooks: Utilized hooks such as `useEffect`, `useState`, `useParams`.
+- React Router: Used for routing operations.
+- React Bootstrap: Used for user interface components.
+- Axios: Used for API requests.
+- Try-Catch Structure: Implemented for error handling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Pages and Features
 
-### Deployment
+- **Homepage**: Provides brief information about the application and details about the developer.
+- **Characters**: Displays character cards with infinite scrolling. Also provides the ability to filter characters using a search bar.
+- **Character Details**: Shows details of a specific character.
+- **Episodes**: Displays episodes. Utilizes a "Load More" button instead of infinite scrolling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## How to Run
 
-### `npm run build` fails to minify
+1. Clone the repository: `git clone https://github.com/user/project.git`
+2. Navigate to the project directory: `cd project`
+3. Install the required packages: `npm install`
+4. Start the project: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contribution
+
+- You can report issues and provide suggestions using [GitHub Issues](https://github.com/alifortacix/rick-and-morty-api-react.git/issues).
+- Pull requests are welcome for code improvements.
+
+---
+
+**Developer:** [Ali Fortacı](https://github.com/alifortacix)
+
+---
+
+## Screenshots
+
+![Homepage](screenshots/homepage.png)
+![Characters](screenshots/characters.png)
+![Character Detail](screenshots/character-detail.png)
+![Search](screenshots/search.png)
+![Episodes](screenshots/episodes.png)
