@@ -29,7 +29,7 @@ Proje geliştirilirken aşağıdaki teknolojiler kullanılmıştır:
 
 ## Nasıl Çalıştırılır
 
-1. Repoyu klonlayın: `git clone https://github.com/kullanici/proje.git`
+1. Repoyu klonlayın: `git clone https://github.com/alifortacix/rick-and-morty-api-react.git`
 2. Proje dizinine gidin: `cd proje`
 3. Gerekli paketleri yükleyin: `npm install`
 4. Projeyi başlatın: `npm start`
@@ -85,7 +85,7 @@ The project was developed using the following technologies:
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/user/project.git`
+1. Clone the repository: `git clone https://github.com/alifortacix/rick-and-morty-api-react.git`
 2. Navigate to the project directory: `cd project`
 3. Install the required packages: `npm install`
 4. Start the project: `npm start`

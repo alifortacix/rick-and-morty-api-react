@@ -12,13 +12,17 @@ const Episodes = () => {
     const loadMore = () => {
         setLoading(true);
         if (requestUrl != null) {
-            axios.get(requestUrl)
-                .then((res) => {
-                    setEpisodeList(prevEpisodes => [...prevEpisodes, ...res.data.results]);
-                    setRequestUrl(res.data.info.next);
-                    setLoading(false);
-                })
-                .catch(() => console.log("object"))
+            try {
+                axios.get(requestUrl)
+                    .then((res) => {
+                        setEpisodeList(prevEpisodes => [...prevEpisodes, ...res.data.results]);
+                        setRequestUrl(res.data.info.next);
+                        setLoading(false);
+                    })
+                    .catch(() => console.log("object"))
+            } catch {
+                alert("An error occured.")
+            }
         }
     }
     useEffect(() => {

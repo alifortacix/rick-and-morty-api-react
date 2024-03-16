@@ -13,16 +13,21 @@ function Characters() {
     const [page, setPage] = useState(1);
     const [search, setSearch] = useState("");
     const fetchData = () => {
-        axios.get(requestUrl)
-            .then((res) => {
-                setCharacters(prevCharacters => [...prevCharacters, ...res.data.results]);
-                setRequestUrl(res.data.info.next);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.error('Error fetching data: ', error);
-                setLoading(false);
-            });
+        try {
+            axios.get(requestUrl)
+                .then((res) => {
+                    setCharacters(prevCharacters => [...prevCharacters, ...res.data.results]);
+                    setRequestUrl(res.data.info.next);
+                    setLoading(false);
+                })
+                .catch((error) => {
+                    console.error('Error fetching data: ', error);
+                    setLoading(false);
+                });
+        }
+        catch {
+            alert("An error occured.")
+        }
     };
 
     const handleScroll = () => {

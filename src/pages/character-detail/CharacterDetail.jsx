@@ -12,13 +12,18 @@ function CharacterDetail() {
     const [character, setCharacter] = useState();
 
     useEffect(() => {
-        axios.get(apiUrl)
-            .then((res) => {
-                setCharacter(res.data);
-            })
-            .catch(() => {
-                alert("Bilinmeyen Bir Hata Oluştu.")
-            })
+        try {
+            axios.get(apiUrl)
+                .then((res) => {
+                    setCharacter(res.data);
+                })
+                .catch(() => {
+                    alert("Bilinmeyen Bir Hata Oluştu.")
+                })
+        }
+        catch {
+            alert("an error occured.")
+        }
     }, []);
     return (
         <Container>
